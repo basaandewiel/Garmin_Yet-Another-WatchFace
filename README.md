@@ -37,7 +37,13 @@ Open Garmin Connect Mobile. Touch More, Garmin Devices, (your device), Connect I
 ## Screenshots
 <img src="https://raw.githubusercontent.com/Laverlin/Yet-Another-WatchFace/master/resources/screens/WatchScreen1.png" height="300px" /> <img src="https://raw.githubusercontent.com/Laverlin/Yet-Another-WatchFace/master/resources/screens/WatchScreen2.png" height="300px" />  <img src="https://raw.githubusercontent.com/Laverlin/Yet-Another-WatchFace/master/resources/screens/WatchScreen3.png" height="300px" />
 
+## Building
+When you want to build this watchface from sourcode, you need of course the Garmin IQ SDK (there are docker images available for this). Furthermore you need to add the file "secret.xml" in the resources/settings folder.
+The file should have the following content:
 
+<strings><string id="LocationApiKeyValue">location key from bing location service</string><string id="IsTest">(1|0) depends on mode</string><string id="ExchangeApiKeyValue">currency exchange api key</string><string id="WatchServerTokenValue">API key from the watch server</string></strings>
+
+You need of course to fill in your own keys in this file
 
 ## Changelog
 
